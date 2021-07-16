@@ -1,0 +1,43 @@
+html,
+body{
+  width: 100%;
+}
+
+body{
+  color: $default;
+  font-size: 14px;
+  line-height: 32px;
+  @extend %OpenSans-400;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title{
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 700;
+  color: $accent;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn{
+  background-color: $accent-dark;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: $menu;
+  border: 1px solid transparent;
+  padding: 15px;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover{
+    background-color: $menu;
+    border: 1px solid $accent-dark;
+    color: $accent-dark;
+  }
+}
